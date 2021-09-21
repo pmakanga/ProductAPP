@@ -13,7 +13,7 @@
         <select class="form-control" [(ngModel)]="Category">
           <option>--Select--</option>
           <option *ngFor="let catName of CategoryList">
-            {{catName.category}}
+            {{catName.category?.categoryDescription}}
           </option>
         </select>
       </div>

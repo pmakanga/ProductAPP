@@ -34,7 +34,7 @@
         <td>{{dataItem.productId}}</td>
         <td>{{dataItem.productName}}</td>
         <td>{{dataItem.productDescription}}</td>
-        <td>{{dataItem.category}}</td>
+        <td>{{dataItem.category?.categoryDescription}}</td>
         <td>
           <button type="button" class="btn btn-light mr-1" data-toggle="modal" data-target="#exampleModal" (click)="editClick(dataItem)" data-backdrop="static" data-keyboard="false">
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil-square" viewBox="0 0 16 16">

@@ -55,6 +55,7 @@ export class ShowProductComponent implements OnInit {
   refreshProductList = () => {
     this.service.getProducts().subscribe(data => {
       this.ProductList = data;
+      console.log(data);
     });
   }
 

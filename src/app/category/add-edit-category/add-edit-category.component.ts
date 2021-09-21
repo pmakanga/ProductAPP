@@ -22,12 +22,13 @@ export class AddEditCategoryComponent implements OnInit {
   ActivateAddEditCategoryComp = false
 
   ngOnInit(): void {
+    this.loadCategoryList();
   }
 
   loadCategoryList = () => {
     this.service.getProductCategory().subscribe((data: any) => {
       this.CategoryList = data;
-
+    
       this.CategoryId = this.cat.categoryId;
       this.CategoryName = this.cat.categoryName;
       this.CategoryDescription = this.cat.categoryDescription;
